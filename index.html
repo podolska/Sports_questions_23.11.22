@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form action="">
+        <label>
+            Як до Вас звертатись?
+            <input type="text" name="name" placeholder="Василиса" required/>
+        </label>
+        <label>
+            Який Ваш рік народження?
+            <input type="text" name="year" placeholder="1989"  pattern="[0-9]{4}" title="Формат - чотири цифри" required/>
+        </label>
+        <label>
+            У якому місті/селищі проживаєте?
+            <input type="text" name="city" placeholder="Київ" required/>
+        </label>
+        <label>
+            Який Ваш улюблений вид спорту?
+            <input type="text" name="sport" placeholder="футбол" required/>
+        </label>
+        <div>
+            <button type="button" class="cancel">Скасувати</button> 
+            <button type="submit">OK</button> 
+        </div>
+    </form>
+    <ul class="info">
+        <li class="name-age"></li>
+        <li class="country"></li>
+        <li class="champion"></li>
+    </ul>
+<script src="./index.js"></script>
+</body>
+</html>
